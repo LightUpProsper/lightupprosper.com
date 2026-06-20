@@ -1,1 +1,5 @@
-document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}}));
+const toggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.links');
+if (toggle && links) {
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+}

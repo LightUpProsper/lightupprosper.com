@@ -1,2 +1,3 @@
-# Light Up Prosper website
-Upload all files and folders to the GitHub repository root. Uses the actual brand-reference logo image crops and flyer-inspired fonts/colors.
+# Light Up Prosper Website
+
+Upload these files to the root of the GitHub repository. Important: keep `style.css`, `script.js`, `logo.png`, and all `.html` files together at the top level so the design loads correctly.
