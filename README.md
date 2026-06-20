@@ -1,5 +1,2 @@
-# Light Up Prosper Website
-
-This is the first version of the Light Up Prosper website for GitHub Pages.
-
-Upload all files and folders to the root of the GitHub repository.
+# Light Up Prosper website
+Upload all files and folders to the GitHub repository root. Uses the actual brand-reference logo image crops and flyer-inspired fonts/colors.
