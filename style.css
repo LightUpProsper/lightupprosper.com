@@ -52,3 +52,54 @@
   .nav-estimate{min-width:0;width:100%!important}
   .hero-logo{width:min(430px,84vw);max-height:260px}
 }
+
+/* v1.4.4 homepage stability fix */
+html,body{max-width:100%;overflow-x:hidden}
+.hero-art{width:100%;overflow:hidden}
+.hero-art-content{
+  width:min(1080px,90vw);
+  max-width:1080px;
+  margin:0 auto;
+  padding-left:0;
+  padding-right:0;
+  text-align:center;
+}
+.hero-logo{
+  display:block;
+  width:min(430px,62vw);
+  max-width:430px;
+  max-height:255px;
+  margin:0 auto 18px;
+  object-fit:contain;
+}
+.hero-art .eyebrow,
+.hero-art h1,
+.hero-art .hero-copy,
+.hero-art .hero-tagline,
+.hero-art .hero-actions{position:relative;left:auto;right:auto;max-width:100%;margin-left:auto;margin-right:auto}
+.hero-art h1{
+  width:100%;
+  max-width:1000px;
+  font-size:clamp(3.2rem,5.8vw,6.1rem);
+  line-height:.93;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.hero-copy{max-width:780px!important}
+.hero-actions-centered{justify-content:center!important}
+
+@media(max-width:1100px) and (min-width:901px){
+  .hero-art-content{width:min(930px,88vw)}
+  .hero-logo{width:min(390px,48vw);max-height:230px}
+  .hero-art h1{font-size:clamp(3.1rem,5.5vw,5rem);max-width:900px}
+}
+@media(max-width:900px){
+  .hero-art-content{width:88vw;padding:42px 0 58px}
+  .hero-logo{width:min(360px,72vw);max-height:220px}
+  .hero-art h1{font-size:clamp(2.8rem,9vw,4.5rem);max-width:100%}
+}
+@media(max-width:520px){
+  .hero-art-content{width:90vw}
+  .hero-logo{width:min(310px,78vw);max-height:195px}
+  .hero-art h1{font-size:clamp(2.55rem,12vw,3.4rem);line-height:.96}
+}
