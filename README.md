@@ -1,9 +1,7 @@
-# Light Up Prosper v1.4.1 hotfix
+Light Up Prosper v1.4.2 logo hotfix
 
-Fixes the Home navigation/cache mismatch seen after opening project pages.
-
-Changes:
-- Home and logo links now return to `/` instead of `/index.html`.
-- CSS and JS use versioned URLs (`?v=1.4.1`) so browsers fetch the matching current files instead of a stale cached copy.
-
-Upload all files to the repository root, replacing matching files.
+- Rebuilt white-logo.png as a true transparent PNG.
+- Removes the white rectangle from the hero logo.
+- Keeps the full logo over the hero house image.
+- Fixes the same white-background issue for project watermarks.
+- Cache-bumped stylesheet/script references to v1.4.2.
