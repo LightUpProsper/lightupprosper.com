@@ -12,3 +12,43 @@
 .hero-tagline{font-size:clamp(1.45rem,3vw,2.25rem);font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;margin:8px auto 16px;color:#fff;letter-spacing:.02em}.hero-logo{max-height:360px;object-fit:contain}.project-card-link{display:block;height:100%}.featured-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.featured-card{background:white;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:0 14px 34px rgba(6,23,51,.1);transition:transform .2s ease,box-shadow .2s ease}.featured-card:hover{transform:translateY(-4px);box-shadow:0 22px 50px rgba(6,23,51,.17)}.featured-card img{width:100%;height:290px;object-fit:cover}.featured-card .content{padding:24px}.featured-card .label{color:#9a742c;text-transform:uppercase;font-weight:800;letter-spacing:.1em;font-size:.76rem}.featured-card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;line-height:1;margin:9px 0 12px;color:var(--navy)}.featured-card p{color:var(--muted);margin:0 0 15px}.text-link{font-weight:800;color:var(--blue)}.story-hero{padding:76px 0 46px;background:linear-gradient(135deg,var(--navy),#12356d);color:white}.story-hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(3rem,7vw,6rem);line-height:.95;margin:12px 0}.story-hero p{max-width:760px;color:rgba(255,255,255,.84);font-size:1.08rem}.story-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,.5fr);gap:36px;align-items:start}.story-copy{font-size:1.04rem}.story-copy h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:3rem;line-height:1;color:var(--navy)}.story-aside{background:white;border:1px solid var(--line);border-radius:24px;padding:26px;position:sticky;top:130px;box-shadow:0 14px 34px rgba(6,23,51,.08)}.story-aside h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;color:var(--navy);margin:0 0 14px}.story-aside ul{padding-left:20px;margin:0}.story-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}.story-gallery figure{margin:0;border-radius:22px;overflow:hidden;position:relative;background:var(--navy);min-height:280px}.story-gallery img{width:100%;height:100%;object-fit:cover}.story-gallery figure:first-child{grid-column:1/-1;min-height:480px}.watermarked:after{content:'';position:absolute;right:16px;bottom:16px;width:120px;height:70px;background:url('white-logo.png') center/contain no-repeat;opacity:.28;pointer-events:none}.back-link{display:inline-block;margin-bottom:22px;font-weight:800;color:var(--blue)}.footer-logo-card{display:inline-block;background:white;border-radius:12px;padding:8px 12px;margin-bottom:15px}.footer-logo-card img{width:170px}.project-kicker{color:#9a742c;text-transform:uppercase;font-weight:800;letter-spacing:.12em;font-size:.8rem}
 @media(max-width:900px){.featured-cards,.story-layout{grid-template-columns:1fr}.story-aside{position:static}.story-gallery figure:first-child{min-height:340px}}
 @media(max-width:560px){.featured-card img{height:230px}.story-gallery{grid-template-columns:1fr}.story-gallery figure:first-child{grid-column:auto;min-height:270px}.story-gallery figure{min-height:240px}.watermarked:after{width:90px;height:50px}}
+
+/* v1.4.3 stability hotfix: consistent hero logo and desktop navigation */
+.hero-logo{
+  width:min(500px,78vw);
+  max-height:300px;
+  object-fit:contain;
+  margin:0 auto 18px;
+  filter:drop-shadow(0 18px 34px rgba(0,0,0,.38));
+  background:transparent!important;
+}
+.nav{gap:18px}
+.brand{flex:0 0 auto;gap:12px}
+.brand img{width:104px}
+.brand span{font-size:1.48rem;line-height:1.05}
+.links{flex:1 1 auto;justify-content:flex-end;gap:16px;min-width:0;white-space:nowrap}
+.links>a:not(.nav-estimate){flex:0 0 auto}
+.nav-estimate{
+  flex:0 0 auto;
+  min-width:168px;
+  width:auto!important;
+  height:auto!important;
+  padding:13px 17px!important;
+  font-size:.76rem!important;
+  line-height:1.15!important;
+  white-space:nowrap!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+}
+@media (max-width:1080px) and (min-width:901px){
+  .brand img{width:88px}
+  .brand span{font-size:1.25rem;letter-spacing:.1em}
+  .links{gap:11px;font-size:.78rem;letter-spacing:.045em}
+  .nav-estimate{min-width:150px;padding:12px 14px!important;font-size:.71rem!important}
+}
+@media(max-width:900px){
+  .brand img{width:100px}
+  .links{white-space:normal}
+  .nav-estimate{min-width:0;width:100%!important}
+  .hero-logo{width:min(430px,84vw);max-height:260px}
+}
