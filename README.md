@@ -1,10 +1,9 @@
-# Light Up Prosper v1.4.6
+# Light Up Prosper v1.4.7
+Corrected reverse-logo update.
 
-Logo-only stability update based on the approved flyer artwork.
+This update changes only the logo assets and cache version:
+- logo-dark.png = detailed navy artwork on transparency
+- logo-white.png = exact detailed reverse/white artwork on transparency
+- logo-hero.png = exact detailed reverse/white artwork on transparency
 
-- `logo-dark.png`: detailed navy transparent logo for light backgrounds/header.
-- `logo-white.png`: detailed white transparent logo for dark footer and photo watermarks.
-- `logo-hero.png`: detailed white transparent logo for the homepage hero.
-- CSS/JS cache query bumped to `1.4.6`.
-
-No page layout, copy, navigation, featured projects, or photography was intentionally changed.
+No layout, copy, navigation, project pages, or photography was intentionally changed.
