@@ -1,13 +1,11 @@
-Light Up Prosper v1.4.2 logo hotfix
+# Light Up Prosper v1.4.5
 
-- Rebuilt white-logo.png as a true transparent PNG.
-- Removes the white rectangle from the hero logo.
-- Keeps the full logo over the hero house image.
-- Fixes the same white-background issue for project watermarks.
-- Cache-bumped stylesheet/script references to v1.4.2.
+Stable logo-role cleanup.
 
-## v1.4.4 home fix
-- Prevents horizontal page drift/scroll on the homepage.
-- Re-centers the hero logo and headline at all desktop/tablet widths.
-- Slightly reduces hero logo/headline sizing so the full text stays on-screen.
-- Keeps the v1.4.3 navigation and consultation-button fixes unchanged.
+Logo roles:
+- logo-dark.png — navigation/header on light backgrounds
+- logo-white.png — dark footer and photo watermarks
+- logo-hero.png — homepage hero over the house image
+
+Upload all files in this folder to the GitHub Pages repository root, replacing matching files.
+After deployment, hard refresh once (Ctrl+F5 on Windows).
