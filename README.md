@@ -1,12 +1,9 @@
-Light Up Prosper v1.4
+# Light Up Prosper v1.4.1 hotfix
 
-Upload every extracted file to the repository root and replace matching files.
+Fixes the Home navigation/cache mismatch seen after opening project pages.
 
 Changes:
-- Restores the preferred hero: full logo over the hero house, with words and buttons below.
-- Keeps the student-owned tone.
-- Adds four clickable Featured Project cards.
-- Adds one full page for each Lighting Story with additional photos.
-- Adds Story 004 for the mature-tree project.
-- Uses the full blue logo in a white card in the dark footer for visibility.
-- Adds subtle photo watermarks on story pages.
+- Home and logo links now return to `/` instead of `/index.html`.
+- CSS and JS use versioned URLs (`?v=1.4.1`) so browsers fetch the matching current files instead of a stale cached copy.
+
+Upload all files to the repository root, replacing matching files.
