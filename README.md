@@ -1,11 +1,10 @@
-# Light Up Prosper v1.4.5
+# Light Up Prosper v1.4.6
 
-Stable logo-role cleanup.
+Logo-only stability update based on the approved flyer artwork.
 
-Logo roles:
-- logo-dark.png — navigation/header on light backgrounds
-- logo-white.png — dark footer and photo watermarks
-- logo-hero.png — homepage hero over the house image
+- `logo-dark.png`: detailed navy transparent logo for light backgrounds/header.
+- `logo-white.png`: detailed white transparent logo for dark footer and photo watermarks.
+- `logo-hero.png`: detailed white transparent logo for the homepage hero.
+- CSS/JS cache query bumped to `1.4.6`.
 
-Upload all files in this folder to the GitHub Pages repository root, replacing matching files.
-After deployment, hard refresh once (Ctrl+F5 on Windows).
+No page layout, copy, navigation, featured projects, or photography was intentionally changed.
